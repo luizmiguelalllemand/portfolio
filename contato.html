@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com Luiz Miguel Lallemand Valadares - Solicite orçamento de site">
+    <title>Contato | Luiz Miguel Lallemand Valadares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Luiz<span>Miguel</span>.dev</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="curriculo.html">Currículo</a></li>
+                    <li><a href="github.html">GitHub</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Preencha o formulário e receba uma proposta personalizada</p>
+
+            <div class="card" style="max-width: 700px; margin: 0 auto;">
+                <form action="#" method="post" onsubmit="event.preventDefault(); alert('Formulário enviado com sucesso! (simulação)');">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo de pessoa *</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="tipo_pessoa" value="fisica" required>
+                                Pessoa Física
+                            </label>
+                            <label>
+                                <input type="radio" name="tipo_pessoa" value="juridica">
+                                Pessoa Jurídica
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horario">Melhor horário para contato *</label>
+                        <select id="horario" name="horario" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="manha">Manhã (08h – 12h)</option>
+                            <option value="tarde">Tarde (13h – 18h)</option>
+                            <option value="noite">Noite (18h – 21h)</option>
+                            <option value="qualquer">Qualquer horário</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servico">Tipo de serviço desejado *</label>
+                        <select id="servico" name="servico" required>
+                            <option value="" disabled selected>Selecione o serviço</option>
+                            <option value="estatica-1-2">Site estático (1 a 2 páginas)</option>
+                            <option value="estatica-3-5">Site estático (3 a 5 páginas)</option>
+                            <option value="estatica-mais5">Site estático (mais de 5 páginas)</option>
+                            <option value="dinamica">Página / site dinâmico</option>
+                            <option value="avancado">Site avançado</option>
+                            <option value="outro">Outro / Não sei ainda</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferências adicionais (opcional)</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="preferencias" value="responsivo">
+                                Design responsivo prioritário
+                            </label>
+                            <label>
+                                <input type="checkbox" name="preferencias" value="seo">
+                                Otimização SEO básica
+                            </label>
+                            <label>
+                                <input type="checkbox" name="preferencias" value="formulario">
+                                Formulário de contato avançado
+                            </label>
+                            <label>
+                                <input type="checkbox" name="preferencias" value="urgente">
+                                Projeto com prazo urgente
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Breve descrição do que deseja contratar *</label>
+                        <textarea id="descricao" name="descricao" placeholder="Descreva o tipo de site, número aproximado de páginas, funcionalidades desejadas e qualquer informação relevante..." required></textarea>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <button type="submit" class="btn">Enviar solicitação</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card" style="max-width: 700px; margin: 2rem auto 0; text-align: center;">
+                <h3>Outras formas de contato</h3>
+                <p>Entre em contato pelo formulário acima para solicitar um orçamento. Responderei o mais breve possível.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Luiz Miguel Lallemand Valadares. Todos os direitos reservados.</p>
+            <p>Desenvolvido com HTML5 e CSS3 | <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
